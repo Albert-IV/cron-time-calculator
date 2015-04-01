@@ -1,10 +1,10 @@
 {
   "name": "cron-time-calculator",
   "version": "0.0.0",
-  "description": "",
+  "description": "Calculate .nextRunAt() of @ncb00gt's node-cron package.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./test/cronCalc.test.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/droppedoncaprica/cron-time-calculator/issues"
   },
-  "homepage": "https://github.com/droppedoncaprica/cron-time-calculator"
+  "homepage": "https://github.com/droppedoncaprica/cron-time-calculator",
+  "dependencies": {
+    "cron": "*"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.1",
+    "should": "^5.2.0"
+  }
 }
